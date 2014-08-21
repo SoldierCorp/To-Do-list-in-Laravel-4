@@ -1,0 +1,141 @@
+/* General classes*/
+
+.task-checked {
+	text-decoration: line-through;
+}
+#notification {
+	border-radius: 0;
+	height: 40px;
+	line-height: 35px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	top: -40px;
+	width: 100%;
+	z-index: 1000;
+}
+.alert-success {
+	background: #dcf2d5;
+	border-bottom: 1px solid #aecca4;
+	color: #41a879;
+}
+.alert-danger {
+	background: #ecc7c4;
+	border-bottom: 1px solid #bd8080;
+	color: #fa4733;
+}
+/* General styles */
+
+h1 {
+	color: #b6b6a0;
+	font-size: 3em;
+	font-weight: normal;
+	text-align: center;
+	line-height: 90px;
+	margin: 0;
+	overflow: hidden;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+ul li {
+	list-style: none;
+	font-size: 30px;
+	padding: 5px;
+}
+input[type=text] {
+	background: #c1c0aa;
+	border-radius: 10px;
+	box-shadow: inset 2px 2px 6px 1px #939380;
+	border: none;
+	font-size: 20px;
+	height: 37px;
+	padding: 0 15px;
+	width: 65%;
+	
+}
+input[type=submit] {
+	border-radius: 10px;
+	box-shadow: 3px 3px 13px 0px #939380;
+	border: none;
+	font-size: 20px;
+	height: 37px;
+	margin-left: 15px;
+	background: #e6f0a3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6f0a3), color-stop(50%,#d2e638), color-stop(51%,#c3d825), color-stop(100%,#dbf043)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf043 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf043 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf043 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf043 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043',GradientType=0 ); /* IE6-9 */
+	width: 20%;
+}
+p {
+	margin: 0;
+	line-height: 70px;
+	text-align: center;
+}
+input[type=checkbox] {
+	display:none; 
+}
+input[type=checkbox] + label {
+	cursor: pointer;
+}
+label:before {
+	content: "";
+	background: #c1c0aa;
+	border-radius: 10px;
+	box-shadow: inset 2px 2px 6px 1px #939380;
+	display: inline-block;
+	height: 36px;
+	margin-right: 20px;
+	text-align: center;
+	vertical-align:middle;
+	width: 36px;
+}
+input[type=checkbox]:checked + label:before {
+	content: url(../media/images/check.png);
+}
+/* Container elements */
+body {
+	font-family: "Century Gothic";
+	background: #d5d6ca;
+	color: #898a77;
+}
+section {
+	margin: 50px auto;
+	border-radius: 8px;
+	overflow: hidden;
+	width: 466px;
+}
+header {
+	background: #cac9b3;
+	border-bottom: 2px solid #c1c0aa;
+	overflow: hidden;
+	position: relative;
+}
+article {
+	background: #efeeda;
+	border-top: 2px solid white;
+}
+article div {
+	padding: 10px;
+}
+article > div:nth-child(1) {
+	border-bottom: 2px solid #c1c0aa;
+}
+article > div:nth-child(2) {
+	border-top: 2px solid white;
+	border-bottom: 2px solid #c1c0aa;
+}
+footer {
+	color: #c1c0aa;
+	border-top: 2px solid white;
+	font-size: 1.5em;
+	font-weight: normal;
+	padding: 25px;
+	text-align: center;
+}
